@@ -77,7 +77,7 @@ Build the project:
     npm run build
 
 🌐 Live Demo
-Coming soon.
+https://safe-steps-six.vercel.app/
 
 💚 Project Vision
 Safety education should be accessible to everyone, regardless of age, ability, language, or learning preference.
