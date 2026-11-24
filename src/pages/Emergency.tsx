@@ -1,0 +1,8 @@
+import {ShieldAlert,Phone,CheckCircle2,Info} from 'lucide-react';
+import {b} from '../data/scenarios';
+
+/** One page per file. Shared navigation, state and translations come from App. */
+export default function Emergency({ctx}:{ctx:any}){
+  const {t,ui}=ctx;
+  return (<><div className="page-heading"><span className="eyebrow emergency-label"><ShieldAlert size={18}/>{t(b('للحالات الطارئة الحقيقية','For real emergencies'))}</span><h1>{t(ui.emergency)}</h1><p>{t(b('إذا كان هناك خطر مباشر، اذهبي إلى مكان آمن واتصلي بخدمات الطوارئ.','If there is immediate danger, get to safety and contact emergency services.'))}</p></div><div className="emergency-grid"><article className="emergency-card"><Phone size={46}/><h2>{t(b('رقم الطوارئ في سلطنة عُمان','Emergency number in Oman'))}</h2><strong dir="ltr">9999</strong><a className="btn btn-primary" href="tel:9999"><Phone size={18}/>{t(b('اتصل بالطوارئ','Call emergency services'))}</a></article><article className="panel emergency-guidance"><h2>{t(b('قبل الاتصال','Before calling'))}</h2><p className="check-row"><CheckCircle2/>{t(b('ابتعدي عن الخطر إذا أمكن ذلك بأمان.','Move away from danger if safe to do so.'))}</p><p className="check-row"><CheckCircle2/>{t(b('اذكري موقعك ونوع الحالة بوضوح.','Clearly state your location and the type of emergency.'))}</p><p className="check-row"><CheckCircle2/>{t(b('اتبعي تعليمات موظف الطوارئ.','Follow the dispatcher’s instructions.'))}</p><p className="note"><Info size={18}/>{t(b('SafeSteps منصة تعليمية وليست بديلًا عن خدمات الطوارئ أو التدريب الطبي المعتمد.','SafeSteps is educational and does not replace emergency services or certified medical training.'))}</p></article></div></>);
+}
